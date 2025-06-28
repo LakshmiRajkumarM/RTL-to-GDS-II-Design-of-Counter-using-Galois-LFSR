@@ -90,7 +90,7 @@ module Cascaded_Counters (
         if (rst) begin
             counter_35bit <= 35'b0;
         end else
-        if(counter_23bit==23'b1 && en) begin
+            if(counter_23bit==23'b11111111111111111111111 && en) begin
             counter_35bit <= counter_35bit + 1;
         end
     end
